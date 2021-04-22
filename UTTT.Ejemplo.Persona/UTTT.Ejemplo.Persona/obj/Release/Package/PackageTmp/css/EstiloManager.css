@@ -1,0 +1,12 @@
+﻿body {
+}
+h3 {   
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.centrar-form {
+    margin: 50px auto;
+    float: none;
+}
