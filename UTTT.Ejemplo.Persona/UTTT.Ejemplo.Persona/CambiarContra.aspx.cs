@@ -109,9 +109,9 @@ namespace UTTT.Ejemplo.Persona
         public new void CorreoE(string error, string correo)
         
         {
-                string EmailOrigen = "fdanielrsantana1986@gmail.com";
+                string EmailOrigen = "fdanielrsantana@gmail.com";
                 string EmailDestino = correo;
-                string contra = "maquina1986";
+                string contra = "contraseña";
                  url = "http://fdrsantana.somee.com/RecuperarContraseña.aspx?token=" + error;
 
                 MailMessage oMailMessage = new MailMessage(EmailOrigen, EmailDestino,
@@ -121,7 +121,7 @@ namespace UTTT.Ejemplo.Persona
                 oMailMessage.IsBodyHtml = true;
                 System.Net.Mail.SmtpClient oSmtpClient = new System.Net.Mail.SmtpClient("smtp.gmail.com");
                 oSmtpClient.UseDefaultCredentials = false;
-                oSmtpClient.Credentials = new System.Net.NetworkCredential("fdanielrsantana1986@gmail.com", "maquina1986");
+                oSmtpClient.Credentials = new System.Net.NetworkCredential("fdanielrsantana@gmail.com", "maquina1986");
                 oSmtpClient.EnableSsl = true; 
                
                 oSmtpClient.Port = 587;
