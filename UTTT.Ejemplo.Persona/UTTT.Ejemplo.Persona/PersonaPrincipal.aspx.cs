@@ -308,7 +308,7 @@ namespace UTTT.Ejemplo.Persona
                 SmtpServer objetoServidor = new SmtpServer("smtp.gmail.com");
 
                 objetoServidor.User = "fdanielrsantana1986@gmail.com";
-                objetoServidor.Password = "maquina1986";
+                objetoServidor.Password = "contraseña";
                 objetoServidor.Port = 587;
                 objetoServidor.ConnectType = SmtpConnectType.ConnectSSLAuto;
 
